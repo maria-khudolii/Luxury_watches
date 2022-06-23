@@ -1,0 +1,2757 @@
+@import 'bootstrap/css/bootstrap.min.css';
+@import 'nullstyle.css'; 
+
+*,*:before,*:after{
+box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Serif Pro', serif;
+	color: #606078; 
+}
+
+.wrapper {
+	max-width: 1366px; 
+	margin: 0 auto; 
+}
+
+.content {
+	position: relative; 
+	width: 100%; 
+}
+
+/*!-- header index --*/
+.top-header {
+	display: flex; 
+	flex-direction: row;  
+	align-items: center;
+	justify-content: space-between;
+	background: #fff; 
+	height: 101px; 
+	padding: 0 50px; 
+}
+.header-box {
+}
+
+.header-burger {
+	position: absolute;
+	left: 120px; 
+	width: 32px; 
+	height: 14px; 
+	cursor: pointer; 
+	display: none; 
+}
+
+.header-burger-line {
+	display: block; 
+	width: 32px; 
+	height: 1px; 
+	background: #CAAB68; 
+	position: relative;
+	border: 0 solid transparent;
+		&:before {
+		display: block;
+		content: ""; 
+		width: 24px; 
+		height: 1px; 
+		background: #CAAB68; 
+		position: absolute;
+		top: 7px; 
+		left: 0px; 
+	}   
+		&:after {
+		display: block;
+		content: ""; 
+		width: 32px; 
+		height: 1px; 
+		background: #CAAB68; 
+		position: absolute; 
+		top: 14px; 
+		left: 0px; 
+	} 
+}
+
+.nav-menu {
+		display: flex; 
+		align-items: center; 
+		justify-content: space-between; 
+		min-width: 691px; 
+		list-style: none; 
+		margin: 0; 
+	}
+
+.header-link {
+	display: block; 
+	padding: 8px; 
+	color: #606078;
+	text-transform: uppercase; 
+	font-size: 16px; 
+	line-height: 1.2;
+	&:hover {
+		color: #CAAB68; 
+	} 
+	&:active {
+		color: #CAAB68; 
+	} 
+} 
+
+.header-link-active {
+	color: #CAAB68; 
+}
+
+.language-btn {
+	display: inline-block; 
+	background: #fff; 
+	color: #606078;
+	margin: 0 5px;
+	text-transform: uppercase; 
+	font-size: 16px; 
+	line-height: 25px;  
+	position: relative;
+	border: 1px solid transparent; 
+	&:hover {
+		color: #CAAB68; 
+	} 
+}
+
+.language-active {
+	display: inline-block; 
+	color: #CAAB68; 
+
+	border-bottom: 1px solid #CAAB68; 
+}
+
+.menu-open {
+	background: #fff;
+	display: none;
+}
+
+.nav-menu-open {
+	list-style: none; 
+}
+
+.montres-logo-open {
+	display: none; 
+}
+
+/*!-- main header --*/
+
+.header {
+	display: flex; 
+	flex-direction: row;  
+	align-items: center;
+	justify-content: space-between;
+	background: #fff; 
+	height: 101px; 
+	padding: 0 50px; 
+}
+
+.montres-header {
+	width: 320px; 
+	margin: 0 15px;
+	text-align: center; 
+	& img {
+		padding-bottom: 5px; 
+		border-bottom: 1px solid #CAAB68;
+		margin-bottom: 2px; 
+	}
+}
+
+.montres-logo-header {
+	width: 320px;  
+}
+
+.montres-header-center {
+	display: none; 
+}
+
+.header-slogan {
+	font-size: 16px; 
+	line-height: 20px; 
+	margin-bottom: 0; 
+	color: #606078; 
+}
+
+.logo-header-center {
+	position: absolute; 
+	width: 320px;  
+	left: 50%;
+	top: center; 
+	transform: translate(-50%, 0); 
+}
+
+.header-nav {
+	display: flex; 
+	align-items: center; 
+}
+
+.sale-btn {
+	color: #FC0E17; 
+	&:hover {
+		color: #fff; 
+	}
+}
+
+.hero {
+	width: 100%; 
+	height: 462px;  
+	position: relative; 
+	background: no-repeat url("../img/bg_hero.jpg");
+}
+
+.container-montres {
+	width: 100%; 
+	height: auto; 
+}
+
+.hero-logo {
+	text-align: center; 
+	& img {
+		margin-bottom: 2px;
+	}
+}
+
+.hero-slogan {
+	color: #fff; 
+	font-size: 22px; 
+	line-height: 28px; 
+	text-align: center; 
+}
+
+.brands-list {
+	display: flex; 
+	justify-content: center; 
+	max-width: 1200px; 
+	margin: 30px auto; 
+
+	flex-wrap: wrap; 
+}
+
+.brand-logo {
+	height: 90px;
+	width: 232px;  
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	margin: 5px; 
+	border-bottom: 1px solid #C09E6A;
+	& img {
+		text-align: middle;
+	}
+}
+
+.row-news {
+	text-align: center; 	
+	text-transform: uppercase; 
+	background: #D7B98D;
+	color: #fff; 
+}
+
+.section-title {
+	height: 50px; 
+	width: 290px; 
+	margin: 51px auto;
+	font-size: 34px;
+	line-height: 50px;	
+}
+
+.section-title-news { 
+	border: 1px solid #fff; 
+	position: relative; 
+	& a {
+		color: #fff;
+	}
+	&:before {
+		content: ""; 
+		width: 32px; 
+		height: 1px; 
+		background: #fff; 
+		position: absolute; 
+		top: 50%; 
+		left: -25px; 
+	}
+	&:after {
+		content: ""; 
+		width: 32px; 
+		height: 1px; 
+		background: #fff; 
+		position: absolute; 
+		top: 50%; 
+		right: -25px; 
+	}
+}
+
+.news-slide {
+	height: 500px; 
+	background-size: cover; 
+}
+
+.news-slide1 {
+	background: no-repeat url("../img/slider_news/slide_news_01.jpg");
+}
+
+.news-slide2 {
+	background: no-repeat url("../img/slider_news/slide_news_02.jpg");
+	background-size: cover; 
+}
+
+.news-item {
+	width: 380px; 
+	height: 250px; 
+	background: #fff; 
+	position: absolute; 
+	top: 50%; 
+	left: 130px; 
+   transform: translate(0, -50%);
+   padding: 28px 40px 28px 60px;  
+   & .brand-name {
+   	font-size: 44px;
+   	line-height: 55px; 
+   	color: #848498;  
+   	margin-bottom: 0; 
+   }
+   & .brand-slogan {
+   	font-size: 40px; 
+   	color: #C09E6A; 
+   	line-height: 50px; 
+   }
+   &:after {
+		content: ""; 
+		width: 73px; 
+		height: 1px; 
+		background: #C09E6A; 
+		position: absolute; 
+		top: 50%; 
+		right: -50px; 
+	}
+}
+
+.carousel-control-next, .carousel-control-prev {
+	opacity: 1; 
+}
+.carousel-control-next-icon {
+	width: 36px; 
+	height: 106px; 
+    background-image: url("../img/news_arrow_right.png"); 
+}
+
+.carousel-control-prev-icon {
+	width: 36px; 
+	height: 106px;  
+    background-image: url("../img/news_arrow_left.png"); 
+}
+
+.carousel-indicators li {
+	width: 50px; 
+	height: 2px; 
+	background-color: #D3BC8F; 
+}
+
+.row-sale {
+	text-align: center; 	
+	text-transform: uppercase; 
+	color: #848498; 
+}
+
+.section-title-sale { 
+	border: 1px solid #848498; 
+	position: relative;
+	& a {
+		color: #848498; 
+	} 
+	&:before {
+		content: ""; 
+		width: 32px; 
+		height: 1px; 
+		background: #848498; 
+		position: absolute; 
+		top: 50%; 
+		left: -25px; 
+	}
+	&:after {
+		content: ""; 
+		width: 32px; 
+		height: 1px; 
+		background: #848498; 
+		position: absolute; 
+		top: 50%; 
+		right: -25px; 
+	}
+}
+
+.section-sale {
+	min-height: 790px; 
+}
+
+.slider-sale {
+	max-width: 930px;
+	margin: 0 auto; 
+}
+
+button.slick-prev.slick-arrow {
+  position: absolute;
+  background: no-repeat url("../img/arrow-left.png");
+  width: 20px; 
+  height: 75px;
+  font-size: 0; 
+  top: 25%;
+  left: -50px;
+  border: 1px solid transparent;
+  outline: none; }
+
+button.slick-next.slick-arrow {
+  position: absolute;
+  background: no-repeat url("../img/arrow-right.png");
+  width: 20px; 
+  height: 75px;
+  font-size: 0;
+  top: 25%;
+  right: -50px;
+  border: 1px solid transparent;
+  outline: none; }
+
+.slider-sale-item {
+	text-align: center; 
+	margin-bottom: 40px;
+	text-decoration: none; 
+	color: #606078; 
+	&:hover {
+		color: #606078;
+		text-decoration: none;
+	}
+}
+
+.slider-item-img {
+		width: 224px; 
+		height: 386px; 
+		margin: 0 auto; 
+	}
+
+.slick-dots {
+	display: flex; 
+	justify-content: center; 
+}
+
+.slick-slider .slick-dots li {
+	list-style: none;
+}
+.slick-dots li button {
+	font-size: 0px;
+	width: 50px;
+	height: 2px;
+	outline: none;
+	margin: 0 5px;
+	border: 0px solid transparent; 
+	background-color: #C09E6A; 
+}
+.slick-slider .slick-dots li.slick-active button {
+	background-color: #848498;
+}
+
+.shade-img {
+	padding-top: 5px; 
+	width: 200px; 
+	margin: 0 auto 15px;  
+}
+
+.model-title {
+	font-size: 20px; 
+	line-height: 25px; 
+	font-weight: 600;
+	margin-bottom: 0;  
+}
+
+.model-description {
+	font-size: 16px; 
+	line-height: 20px; 
+}
+
+.price {
+	font-size: 22px; 
+	font-style: italic; 
+	& .old-price {
+		text-decoration: line-through;
+	}
+}
+
+footer { 
+	text-align: center;
+	background-color: #606078;
+	height: 353px; 
+	padding-top: 43px; 
+	position: relative; 
+	& .address {
+		font-size: 16px;
+		line-height: 20px;
+		color: #fff;
+	}
+	& .logo-footer {
+		margin-bottom: 23px; 
+	}
+	& .address-footer {
+		max-width: 686px;
+		border-top: 1px solid #E1C7A9;
+		padding-top: 10px; 
+		margin: 0 auto 30px;   
+	}
+	& .slogan-footer {
+		font-size: 18px; 
+	}
+	& .bottom-line {
+		background: #D7B98D; 
+		height: 61px; 
+		width: 100%; 
+		position: absolute;
+		bottom: 0;  
+		z-index: 2000; 
+	}
+}
+
+/*watches page*/
+.brands-list-watches {
+	display: flex; 
+	justify-content: center; 
+	max-width: 1200px; 
+	margin: 30px auto 200px; 
+	flex-wrap: wrap; 
+}
+
+/*sale page*/
+.sale-subtitle {
+	text-align: center; 
+	font-size: 25px; 
+	line-height: 32px;
+}
+
+.sales-logo {
+	text-align: center; 
+	margin-bottom: 40px;
+}
+
+.sales-wrapper {
+	max-width: 1010px; 
+	margin: 0 auto 45px auto; 
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sale-item {
+	display: inline-block; 
+	max-width: 225px;
+	text-align: center;
+	margin: 0 55px 20px 55px; 
+	text-align: center; 
+	color: #606078; 
+	&:hover {
+		color: #606078; 
+		text-decoration: none; 
+	}
+}
+
+.sale-img {
+	height: 420px; 
+	max-width: 240px; 
+	background: no-repeat url("../img/shade.png");
+	background-size: contain; 
+	background-position: 0 100%;
+	margin: 0 auto 10px auto; 
+}
+
+.sale-img-rotate {
+	width: 612px; 
+	background: no-repeat url("../img/shade.png");
+	background-size: contain; 
+	background-position: 0 100%;
+	margin: 0 auto 10px auto; 
+} 
+
+.watch-rotate { 
+}
+
+.watch-img {
+	max-width: 100%; 
+	max-height: 100%; 
+}
+
+/*sale item page*/
+.sale-item-wrapper {
+	margin-bottom: 114px; 
+	display: flex;  
+	justify-content: center; 
+}
+
+.sale-watches-img {
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center;
+	align-items: center; 
+	background: no-repeat url("../img/shade.png");
+	background-size: contain; 
+	background-position: 0 100%;
+	margin: 0 130px 20px 0;  
+}
+
+.watches-img {
+	margin-bottom: 30px; 
+}
+
+.specification-title {
+	text-transform: uppercase; 
+	font-size: 30px; 
+	line-height: 38px;
+	color: #C09E6A; 
+	font-weight: 600; 
+}
+
+.item-title {
+	font-size: 26px; 
+	line-height: 32px; 
+	font-weight: 600; 
+}
+
+.item-number {
+	font-size: 24px; 
+	line-height: 31px; 
+}
+
+.item-description {
+	padding-bottom: 25px; 
+	margin-bottom: 25px; 
+	border-bottom: 1px solid #C09E6A;
+}
+
+.details {
+	font-size: 18px; 
+}
+
+.details-title {
+	font-size: 22px; 
+	line-height: 28px; 
+	font-weight: 600; 
+	padding-right: 5px; 
+}
+
+/*brand collection page*/
+.brand-cover {
+	position: relative; 
+	height: 400px; 
+	max-width: 1366px; 
+	background-size: cover;  
+	background: no-repeat url("../img/cover_nardin.jpg");
+	background-position: 0 100%;
+}
+
+.brand-item {
+	width: 380px; 
+	height: 250px; 
+	background: #fff; 
+	position: absolute; 
+	top: 50%; 
+	right: 7%; 
+   transform: translate(0, -50%);  
+   outline: 1px solid #C09E6A; 
+   outline-offset: -10px;
+   padding: 50px 91px 29px 38px; 
+   cursor: pointer; 
+   & .brand-title {
+   	font-size: 28px;
+   	line-height: 35px; 
+   	color: #848498;  
+   	margin-bottom: 0; 
+   }
+   & .brand-description {
+   	font-size: 16px; 
+   	line-height: 21px; 
+   	color: #848498;
+   }
+   &:after {
+		content: ""; 
+		width: 73px; 
+		height: 1px; 
+		background: #C09E6A; 
+		position: absolute; 
+		top: 50%; 
+		right: -50px; 
+	}
+}
+
+.brand-section {
+	width: 100%; 
+	height: 96px;
+	background: #D7B98D;
+	display: flex;  
+	justify-content: center; 
+	align-items: center;
+}
+
+.brand-section-logo {
+	width: 280px; 
+	height: 86px; 
+	& img {
+		width: 100%; 
+		height: 100%; 
+	}
+}
+
+.collection-item {
+	max-width: 610px; 
+	margin: 60px auto 70px;  
+	text-align: center; 
+	& .collection-title {
+		display: inline-block; 
+		width: 290px; 
+		padding: 6px 35px; 
+		margin: 0 auto; 
+		position: relative; 
+		border: 1px solid #848498; 
+		color: #848498; 
+		font-size: 30px;
+		line-height: 38px; 
+		text-align: center; 
+		cursor: pointer;
+		&:before {
+			content: ""; 
+			width: 35px; 
+			height: 1px; 
+			background: #848498; 
+			position: absolute; 
+			top: 50%; 
+			left: -25px; 
+		}
+		&:after {
+			content: ""; 
+			width: 35px; 
+			height: 1px; 
+			background: #848498; 
+			position: absolute; 
+			top: 50%; 
+			right: -25px; 
+		} 
+	}
+	& .watch-item {
+	width: 530px; 
+	}
+}
+
+.btn-explore {
+	display: block;
+	width: 240px; 
+	height: 42px; 
+	margin: 0 auto 134px; 
+	background: #fff; 
+	border: 1px solid #C09E6A;
+	font-size: 22px; 
+	line-height: 42px; 
+	color:  #C09E6A;
+	text-align: center;
+	&:hover {
+		background: #C09E6A;
+		color: #fff; 
+	}
+}
+
+.btn-warranty-wrapper {
+	padding: 0 20px; 
+}
+
+.btn-warranty {
+	display: block;
+	max-width: 560px; 
+	min-height: 42px; 
+	color: #fff; 
+	background: #606078; 
+	margin: 0 auto 190px; 
+	font-size: 22px; 
+	text-align: center; 
+	line-height: 42px; 
+	&:hover {
+		background: #D7B98D;
+		color: #fff; 
+	}
+}
+
+/*accessories page*/
+.accessories-cover {
+	position: relative; 
+	height: 400px; 
+	max-width: 1366px; 
+	background-size: cover;  
+	background: no-repeat url("../img/cover_accessories.jpg");
+	background-position: 0 100%;
+}
+
+.accessory-img{
+	max-width: 600px;
+	padding-bottom: 56px; 
+	margin-bottom: 11px; 
+	position: relative;  
+	&:after {
+		content: ""; 
+		position: absolute; 
+		height: 56px;
+		width: 502px; 
+		bottom: 0;  
+		left: 50%; 
+		background: no-repeat url("../img/shade.png");
+				transform: translate(-50%, 0); 
+		background-size: contain; 
+	}
+}
+
+/*boutique page*/
+.hero-boutique {
+	width: 100%; 
+	height: 397px; 
+	margin-bottom: 62px; 
+	position: relative; 
+	background: no-repeat url("../img/bg_hero.jpg");
+}
+
+.btn-tour {
+	width: 170px; 
+	height: 62px; 
+	background: #D7B98D; 
+	border: 10px solid #fff; 
+	font-size: 22px; 
+	line-height: 42px; 
+	text-align: center; 
+	color: #fff; 
+	position: absolute; 
+	top: 180px;
+	right: 320px; 
+	z-index: 500; 
+	&:hover {
+		color: #fff; 
+	}
+}
+
+.contacts-wrapper {
+	max-width: 990px;
+	margin: 0 auto;  
+	padding: 80px 20px;
+	font-size: 22px; 
+	line-height: 30px; 
+	display: flex; 
+	flex-wrap: nowrap; 
+	justify-content: space-between;   
+}
+
+.light-text {
+	color: #C09E6A; 
+}
+
+.contacts-title {
+	width: 100%; 
+	height: 96px; 
+	color: #fff; 
+	background: #D7B98D;
+	font-size: 30px; 
+	line-height: 96px; 
+	justify-content: center; 
+}
+
+.contacts {
+	max-width: 302px; 
+	margin: 0 5px; 
+}
+
+.contacts-location {
+	width: 110px; 
+	margin: 0 5px; 
+}
+
+.location-link {
+	color: #606078;
+	text-decoration: underline; 
+	&:hover {
+		color: #606078;
+	} 
+}
+
+/*companies sites page*/
+.companies-wrapper {
+	max-width: 1100px;
+	margin: 0 auto; 
+	padding: 42px 0; 
+	margin-bottom: 65px; 
+}
+.companies-title {
+	font-size: 34px; 
+	line-height: 42px; 
+	color: #C09E6A; 
+	margin-bottom: 35px; 
+}
+
+.alphabet {
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: center; 
+	font-size: 30px; 
+	margin-bottom: 12px; 
+	padding: 15px 0; 
+	& .alphabet-letter {
+		display: inline-block;
+		margin: 0 3px 10px 3px;  
+		color: #606078; 
+		padding: 0 10px; 
+		border-bottom: 1px solid #C09E6A;
+		&:hover {
+			color: #C09E6A;
+			text-decoration: none; 
+		}
+		&:active {
+			color: #C09E6A;
+			text-decoration: none; 
+		}
+		&.letter-active {
+			color: #C09E6A;
+			text-decoration: none; 
+		}
+	}
+}
+
+.companies-list {
+	padding: 40px; 
+	font-size: 18px; 
+	line-height: 30px; 
+}
+
+.company-link {
+	color: #C09E6A;
+	&:hover {
+		color: #C09E6A;
+		text-decoration: underline; 
+	}
+}
+
+/* glossary page*/
+.glossary-wrapper {
+	max-width: 1100px;
+	margin: 0 auto; 
+	padding: 42px 0; 
+	margin-bottom: 65px; 
+}
+
+.glossary-link {
+	font-size: 18px; 
+	line-height: 30px; 
+	color: #606078; 
+	&:hover {
+		color: #C09E6A;
+		text-decoration: underline; 
+	}
+}
+
+.glossary-item {
+	font-size: 18px; 
+	line-height: 30px; 
+	font-weight: 600; 
+	text-align: right; 
+}
+
+.glossary-description {
+	max-width: 505px; 
+}
+
+@media only screen 
+and (min-width : 1024px) 
+and (max-width : 1050px) {
+	.header-logo {
+		position: relative; 
+		left: 50%; 
+		margin-left: 0; 
+		transform: translate(-50%, 0); 
+	}
+
+	.header-logo-main {
+		display: none; 
+	}
+
+	.header-burger {
+	display: block; 
+	left: 54px;  
+	}
+
+	.nav-menu {
+		display: none;  
+	}
+
+	.language-select {
+		display: none; 
+	}
+
+	.language-btn {
+		justify-content: flex-end;
+	}
+	/* 1024px*/
+
+	/*!-- header menu-open--*/
+	.show	.top-header {
+		padding: 0 54px; 
+	}
+
+	.show .menu-open {
+		background: #fff;
+		display: block; 
+		position: absolute;
+		top: 82px; 
+		padding: 0 54px; 
+		width: 100%; 
+		z-index: 800; 
+	}
+
+	.show .nav-menu-open {
+		padding-left: 0; 
+	}
+
+	.show .header-logo {
+		display: block; 
+	}
+
+	.show .header-logo-main  {
+		display: none; 
+	}
+
+	.show .header-link {
+		padding-left: 0; 
+	}
+
+	.show	.montres-logo-open {
+		display: block; 
+		width: 300px;
+		padding-left: 10px; 
+		position: absolute; 
+		text-align: center;   
+		left: 50%;
+		top: center; 
+		transform: translate(-50%, 0); 
+		cursor: pointer; 
+		& img {
+			padding-bottom: 5px; 
+			border-bottom: 1px solid #CAAB68; 
+		}
+	}
+
+	.show .language-btn-menu-open {
+		display: flex; 
+		justify-content: space-between;  
+		& .language-btn:after {
+			width: auto; 
+			display: none; 
+		}
+	}
+
+	.montres-header-center {
+		width: 300px; 
+		display: block; 
+		position: absolute; 
+		padding-left: 10px; 
+		text-align: center;   
+		left: 50%;
+		top: center; 
+		transform: translate(-50%, 0); 
+		cursor: pointer; 
+		& img {
+			padding-bottom: 5px; 
+			border-bottom: 1px solid #CAAB68; 
+		}
+	}
+
+	.show .montres-header-center {
+		display: none; 
+	}
+}
+
+@media only screen 
+and (min-width : 0) 
+and (max-width : 575px) {
+	.glossary-item {
+	text-align: left; 
+	}
+}
+
+@media only screen 
+and (min-width : 651px) 
+and (max-width : 1024px) {
+	.contacts-wrapper {
+		max-width: 880px;
+		padding: 63px 10px;
+		font-size: 22px;  
+	}
+
+	.contacts-title {
+		width: 100%; 
+		height: 60px; 
+		font-size: 22px; 
+		line-height: 60px; 
+	}
+
+	/*companies sites page*/
+	.companies-wrapper {
+		max-width: 775px;
+	}
+}
+
+@media only screen 
+and (min-width : 521px) 
+and (max-width : 650px) {
+	.contacts-title {
+		width: 100%; 
+		height: 60px; 
+		font-size: 20px; 
+		line-height: 60px; 
+	}
+
+	.contacts-wrapper {
+		display: block; 
+		max-width: 450px;
+		padding: 34px 0;
+		font-size: 20px;  
+	}
+
+	.contacts {
+		width: 100%; 
+		margin-bottom: 30px; 
+	}
+
+	.contacts-location {
+		width: 100%; 
+		margin-bottom: 30px; 
+	}
+}
+
+
+/* Mobile 1024px*/
+@media only screen 
+and (min-width : 521px) 
+and (max-width : 1024px) 
+{	
+		.header-logo {
+		position: relative; 
+		left: 50%; 
+		margin-left: 0; 
+		transform: translate(-50%, 0); 
+	}
+
+	.header-logo-main {
+		display: none; 
+	}
+
+	.header-burger {
+	display: block; 
+	left: 54px;  
+	}
+
+	.nav-menu {
+		display: none;  
+	}
+
+	.language-select {
+		display: none; 
+	}
+
+	.language-btn {
+		justify-content: flex-end;
+	}
+	/* 1024px*/
+
+	/*!-- header menu-open--*/
+	.show	.top-header {
+		padding: 0 54px; 
+	}
+
+	.show .menu-open {
+		display: block; 
+		position: absolute;
+		top: 82px; 
+		padding: 0 54px; 
+		width: 100%; 
+		z-index: 800; 
+	}
+
+	.show .nav-menu-open {
+		padding-left: 0; 
+	}
+
+	.show .header-logo {
+		display: block; 
+	}
+
+	.show .header-logo-main  {
+		display: none; 
+	}
+
+	.show .header-link {
+		padding-left: 0; 
+	}
+
+	.show	.montres-logo-open {
+		display: block; 
+		width: 300px;
+		position: absolute; 
+		text-align: center; 
+			padding-left: 10px;   
+		left: 50%;
+		top: center; 
+		transform: translate(-50%, 0); 
+		cursor: pointer; 
+		& img {
+			padding-bottom: 5px; 
+			border-bottom: 1px solid #CAAB68; 
+		}
+	}
+
+	.show .language-btn-menu-open {
+		display: flex; 
+		justify-content: space-between;  
+		& .language-btn:after {
+			width: auto; 
+			display: none; 
+		}
+	}
+
+	.montres-header-center {
+		width: 300px; 
+		display: block; 
+		position: absolute; 
+		text-align: center;  
+		padding-left: 10px;  
+		left: 50%;
+		top: center; 
+		transform: translate(-50%, 0); 
+		cursor: pointer; 
+		& img {
+			padding-bottom: 5px; 
+			border-bottom: 1px solid #CAAB68; 
+		}
+	}
+
+	.show .montres-header-center {
+		display: none; 
+	}
+	/* 1024px*/
+	
+	.hero {
+		height: 330px; 
+		background-position: 50% 0;
+		background-size: cover;
+	}
+
+	.montres-bg {
+		padding: 12px 21px; 
+		height: 82px; 
+		max-width: 380px; 
+		top: -50px; 
+	}
+
+	.montres-logo {
+		width: 337px; 
+	}
+
+	.hero-slogan {
+		font-size: 14px; 
+	}
+
+	/* 1024px*/
+	
+	.section-title {
+	height: 42px; 
+	width: 270px; 
+	margin: 33px auto;
+	font-size: 30px;
+	line-height: 42px;	
+	}
+
+	.news-item {
+	width: 232px; 
+	height: 187px;  
+   transform: translate(0, -50%);
+   padding: 20px 40px 17px 22px;  
+   & .brand-name {
+   	font-size: 31px;
+   	line-height: 39px; 
+   	}
+   & .brand-slogan {
+   	font-size: 29px; 
+   	line-height: 36px; 
+   	}
+   &:after {
+		content: ""; 
+		width: 39px; 
+		height: 1px; 
+		right: -25px; 
+		}
+	}
+
+	.news-slide {
+		background-position: 65% 0;
+	}
+
+	/* 1024px*/
+	
+	.slider-sale {
+		max-width: 800px; 
+	}
+
+	.slider-item-img {
+		width: 224px; 
+		margin: 0 auto;  
+	}
+
+	.brand-logo {
+		width: 210px; 
+		height: 82px; 
+	}
+
+	/*watches page*/
+	.brands-list-watches {
+	display: flex; 
+	justify-content: center; 
+	max-width: 1200px; 
+	margin: 20px auto 119px; 
+	flex-wrap: wrap; 
+	}
+
+	/* 1024px*/
+	
+	/*brand collection page*/
+	.brand-cover {
+		height: 252px; 
+		background-size: cover; 
+		background-position: 0 80%;
+	}
+
+	.brand-item {
+		width: 247px; 
+		height: 165px; 
+	   outline-offset: -6px;
+	   padding: 12px 30px 18px 20px; 
+	   & .brand-title {
+	   	font-size: 23px;
+	   	line-height: 29px;  
+	   }
+	   & .brand-description {
+	   	font-size: 15px; 
+	   	line-height: 19px; 
+	   }
+	   &:after {
+			width: 47px; 
+			height: 1px;
+			right: -30px;  
+		}
+	}
+
+	.brand-section {
+	height: 60px;
+	margin-bottom: 34px; 
+	}
+
+	.brand-section-logo {
+		width: 174px; 
+		height: 52px; 
+		& img {
+			width: 100%; 
+			height: 100%; 
+		}
+	}
+
+	.collection-item {
+		max-width: 520px; 
+		margin: 0 auto 34px;   
+		& .collection-title {
+			font-size: 24px;
+			line-height: 30px; 
+			width: 256px;  
+			&:before {
+				width: 30px; 
+				left: -20px; 
+			}
+			&:after {
+				width: 30px; 
+				right: -20px; 
+			} 
+		}
+		& .watch-item {
+		width: 400px; 
+		}
+	}
+	.btn-explore {
+		width: 226px; 
+		height: 40px; 
+		margin: 0 auto 134px; 
+		font-size: 20px; 
+		line-height: 40px; 
+	}
+
+	/* 1024px*/
+	
+.sale-img-rotate {
+	width:  411px; 
+}
+	.watch-rotate {
+	width: 411px;   
+}
+
+
+	/* 1024px*/
+	
+	/*sale page*/
+	.sales-wrapper {
+		max-width: 415px; 
+		margin: 0 auto; 
+		justify-content: center; 
+	}
+
+	.sale-subtitle {
+		font-size: 20px; 
+	}
+
+	.specification-title {
+	font-size: 28px; 
+	line-height: 35px;
+	}
+
+	.item-title {
+		font-size: 24px; 
+		line-height: 30px; 
+	}
+
+	.item-number {
+		font-size: 22px; 
+		line-height: 28px; 
+	}
+
+	.sale-watches-img {
+		margin: 0 70px 20px 0;  
+	}
+
+	/* 1024px*/
+	
+	/*accessories page*/
+	.accessories-cover {
+		height: 252px; 
+		background-size: cover; 
+		background-position: 0 80%;
+	}
+
+	.accessory-img{
+	max-width: 386px;
+	margin: 0 auto; 
+	padding-bottom: 34px; 
+	margin-bottom: 29px; 
+	position: relative;  
+	&:after {
+		content: ""; 
+		position: absolute; 
+		height: 34px;
+		width: 339px; 
+		bottom: 0;  
+		left: 50%; 
+		background: no-repeat url("../img/shade.png");
+		transform: translate(-40%, 0); 
+		background-size: contain; 
+		}
+	}
+
+	/* 1024px*/
+	
+	/*boutique page*/
+	.hero-boutique {
+		width: 100%; 
+		height: 252px; 
+		position: relative; 
+		background-size: cover;
+	}
+
+	.btn-tour {
+		display: block; 
+		width: 128px; 
+		height: 46px; 
+		border: 7px solid #fff; 
+		font-size: 16px; 
+		line-height: 32px;  
+		top: 165px;
+		left: 50%;
+		transform: translate(-50%, 0);   
+	}
+
+
+
+	/* glossary page*/
+	.glossary-wrapper {
+		max-width: 770px; 
+	}
+}
+
+/* Mobile 520px*/
+
+@media only screen 
+and (min-width : 413px) 
+and (max-width : 520px) {
+	.top-header {
+		padding: 0 30px 0 20px;   
+	}
+
+	.header {
+		padding: 0 30px 0 20px;   
+	}
+	.header-burger {
+	display: block; 
+	}
+
+	.nav-menu {
+		display: none;  
+	}
+
+	.header-burger {
+		left: 20px; 
+	}
+
+	.language-select {
+		display: none; 
+	}
+
+	.language-btn {
+		width: auto; 
+		font-size: 14px;
+	}
+
+	.header-logo {
+		position: relative; 
+		left: 50%; 
+		margin-left: 0; 
+		transform: translate(-50%, 0); 
+	}
+
+	.header-logo-main {
+		display: none; 
+	}
+
+	.montres-header-center {
+		position: relative; 
+		display: block;
+		width: 252px; 
+		margin: 0 auto;
+		padding-left: 10px;  
+		cursor: pointer; 
+		& .header-slogan {
+			display: none; 
+		} 
+		& img {
+			padding-bottom: 5px; 
+			border-bottom: 1px solid #CAAB68; 
+		}
+	}
+
+	/*520px*/
+	
+	/*!-- header index menu-open--*/
+	.show	.top-header {
+		padding: 0 30px 0 20px; 
+	}
+
+	.show .menu-open {
+		display: block; 
+		position: absolute;
+		top: 82px; 
+		padding: 0 30px 0 20px;  
+		width: 100%; 
+		z-index: 800; 
+	}
+
+	.show .nav-menu-open {
+		padding-left: 0; 
+	}
+
+	.show .header-logo {
+		display: block; 
+	}
+
+	.show .header-logo-main {
+		display: none; 
+	}
+
+	.show .header-burger {
+		left: 20px; 
+	}
+
+	.show .header-link {
+		padding-left: 0; 
+	}
+
+	.show .language-btn-menu-open {
+		display: flex; 
+		justify-content: space-between;  
+		& .language-btn:after {
+			width: auto; 
+			display: none;
+		}
+	}
+
+	/*520px*/
+	
+	.hero {
+		height: 330px; 
+		background-position: 50% 0;
+		background-size: cover;
+	}
+
+	.montres-bg {
+		height: 82px; 
+		padding: 12px 21px; 
+		max-width: 380px; 
+		top: -50px; 
+	}
+
+	.montres-logo {
+		width: 337px; 
+	}
+
+	.hero-slogan {
+		font-size: 14px; 
+	}
+
+	/*520px*/
+	
+	.brand-logo {
+		width: 210px; 
+		height: 82px; 
+	}
+
+	.section-title {
+	height: 42px; 
+	width: 270px; 
+	margin: 33px auto;
+	font-size: 30px;
+	line-height: 42px;	
+	}
+
+	.news-item {
+   	width: 232px; 
+		height: 187px; 
+   	left: 50%; 
+		transform: translate(-50%, 0); 
+   	padding: 17px 36px 13px 22px;  
+   & .brand-name {
+   	font-size: 31px;
+   	line-height: 39px; 
+   	}
+   & .brand-slogan {
+   	font-size: 29px; 
+   	line-height: 36px; 
+   	}
+   &:after {
+		content: ""; 
+		width: 39px; 
+		height: 1px; 
+		right: -25px; 
+		}
+	}
+	
+	.news-slide {
+		background-position: 77% 0;
+	}
+
+	.slider-sale {
+		max-width: 520px; 
+	}
+
+	.brands_wrapper {
+	padding-top: 45px; 
+	height: 394px; 
+	}
+
+	/*520px*/
+	
+	footer { 
+		& .address {
+			font-size: 14px;
+			line-height: 18px;
+		}
+		& .slogan-footer {
+			font-size: 16px; 
+			line-height: 20px; 
+		}
+	}
+
+	/*watches page*/
+	.brands-list-watches {
+	display: flex; 
+	justify-content: center; 
+	max-width: 450px; 
+	margin: 20px auto 129px; 
+	flex-wrap: wrap; 
+	}
+
+	/*520px*/
+	
+	/*brand collection page*/
+	.brand-cover {
+		height: 252px; 
+		background: no-repeat url("../img/cover_nardin_medium.jpg");
+		background-size: cover;  
+		background-position: 0 100%;
+	}
+
+	.brand-item {
+		width: 247px; 
+		height: 162px; 
+	   outline-offset: -6px;
+	   padding: 10px 27px 18px 20px; 
+	   & .brand-title {
+	   	font-size: 23px;
+	   	line-height: 29px;  
+	   }
+	   & .brand-description {
+	   	font-size: 15px; 
+	   	line-height: 19px; 
+	   }
+	   &:after {
+			width: 47px; 
+			height: 1px;
+			right: -30px;  
+		}
+	}
+	.brand-section {
+	height: 60px;
+	margin-bottom: 34px;  
+	}
+
+	.brand-section-logo {
+		width: 174px; 
+		height: 52px; 
+		& img {
+			width: 100%; 
+			height: 100%; 
+		}
+	}
+
+
+
+	/*520px*/
+	
+	.collection-item {
+		max-width: 520px; 
+		margin: 0 auto 34px;   
+		& .collection-title {
+			font-size: 24px;
+			width: 256px;  
+			&:before {
+				width: 30px; 
+				left: -20px; 
+			}
+			&:after {
+				width: 30px; 
+				right: -20px; 
+			} 
+		}
+		& .watch-item {
+		width: 400px; 
+		}
+		& .shade {
+			width: 339px;
+			height: 37px;  
+		} 
+	}
+
+	.btn-explore {
+		width: 226px; 
+		height: 40px; 
+		margin: 0 auto 134px; 
+		font-size: 20px; 
+		line-height: 40px; 
+	}
+
+	.sale-img-rotate {
+		width:  411px; 
+	}
+	.watch-rotate {
+		width: 411px;   
+	}
+
+	/*sale page*/
+	.sales-wrapper {
+		max-width: 415px; 
+		margin: 0 auto; 
+		justify-content: center; 
+	}
+
+	/*520px*/
+	
+	/*sale item page*/
+	.sale-subtitle {
+		font-size: 20px; 
+		margin-bottom: 25px; 
+	}
+
+	.sale-item-wrapper {
+		flex-direction: column; 
+		align-items: center; 
+	}
+
+	.specification-title {
+	font-size: 28px; 
+	line-height: 35px;
+	}
+
+	.item-title {
+		font-size: 24px; 
+		line-height: 30px; 
+	}
+
+	.item-number {
+		font-size: 22px; 
+		line-height: 28px; 
+	}
+
+	.watches-img {
+	margin-bottom: 55px;  
+	}
+
+	/*520px*/
+	
+	/*accessories page*/
+	.accessories-cover {
+		height: 252px; 
+		background: no-repeat url("../img/cover_accessories_medium.jpg");
+		background-position: 50% 100%;
+	}
+
+	.accessory-img{
+		max-width: 386px;
+		margin: 0 auto; 
+		padding-bottom: 34px; 
+		margin-bottom: 29px; 
+		position: relative;  
+		&:after {
+			content: ""; 
+			position: absolute; 
+			height: 34px;
+			width: 339px; 
+			bottom: 0;  
+			left: 50%; 
+			background: no-repeat url("../img/shade.png");
+			transform: translate(-40%, 0); 
+			background-size: contain; 
+		}
+	}
+
+	/*520px*/
+
+		/*boutique page*/
+	.hero-boutique {
+		width: 100%; 
+		height: 252px; 
+		position: relative; 
+		background-size: 185%;
+		background-position: 50% 0;
+	}
+
+	.btn-tour {
+		display: block; 
+		width: 128px; 
+		height: 46px; 
+		border: 7px solid #fff; 
+		font-size: 16px; 
+		line-height: 32px;  
+		top: 165px;
+		left: 50%;
+		transform: translate(-50%, 0);   
+	}
+
+	.contacts-title {
+		width: 100%; 
+		height: 60px; 
+		font-size: 22px; 
+		line-height: 60px; 
+	}
+
+	.contacts-wrapper {
+		display: block; 
+		max-width: 450px;
+		padding: 34px;
+		font-size: 20px;  
+	}
+
+	.contacts {
+		max-width: 100%; 
+		margin-bottom: 30px; 
+	}
+
+	.contacts-location {
+		width: 100%; 
+		margin-bottom: 30px; 
+	}
+
+}
+
+/* Mobile 412px*/
+@media only screen 
+and (min-width : 321px) 
+and (max-width : 412px)
+{
+	.top-header {
+		padding: 0 30px 0 20px;   
+	}
+
+	.header-burger {
+	display: block; 
+	width: 26px; 
+	}
+
+	.header-burger-line {
+		width: 26px; 
+			&:before { 
+			width: 18px; 
+		}   
+			&:after {
+			width: 26px; 
+		} 
+	}
+
+	.nav-menu {
+		display: none;  
+	}
+
+	.header-burger {
+		left: 20px; 
+	}
+
+		.language-select {
+		display: none; 
+	}
+
+	.language-btn {
+		width: auto; 
+		font-size: 14px;
+		&:after {
+		display: none;  
+		}
+	}
+
+	.header-logo {
+		position: relative; 
+		left: 50%; 
+		margin-left: 0; 
+		transform: translate(-50%, 0); 
+	}
+
+	.header-logo-main {
+		display: none; 
+	}
+
+	.montres-header-center {
+		position: relative; 
+		display: block;
+		width: 252px; 
+		padding-left: 10px; 
+		margin: 0 auto; 
+		cursor: pointer; 
+		& .header-slogan {
+			display: none; 
+		} 
+		& img {
+			padding-bottom: 5px; 
+			border-bottom: 1px solid #CAAB68; 
+		}
+	} 
+
+	/*412px*/
+	/*!-- header index menu-open--*/
+	.show	.top-header {
+		padding: 0 30px 0 20px; 
+	}
+
+	.show .menu-open {
+		display: block; 
+		position: absolute;
+		top: 82px; 
+		padding: 0 30px 0 20px;  
+		width: 100%; 
+		z-index: 800; 
+	}
+
+	.show .nav-menu-open {
+		padding-left: 0; 
+	}
+
+	.show .header-logo {
+		display: block; 
+	}
+
+	.show .header-logo-main {
+		display: none; 
+	}
+
+	.show .header-burger {
+		left: 20px; 
+	}
+
+	.show .header-link {
+		padding-left: 0; 
+	}
+
+	.show	.montres-logo-open {
+		display: block; 
+		width: 252px; 
+		position: absolute; 
+		text-align: center; 
+		padding-left: 10px;   
+		left: 50%;
+		top: center; 
+		transform: translate(-50%, 0); 
+		cursor: pointer; 
+		& .header-slogan {
+			display: none; 
+		} 
+		& img {
+			padding-bottom: 5px; 
+			border-bottom: 1px solid #CAAB68; 
+		}
+	}
+
+	.show	.montres-header-center {
+		display: none; 
+	}
+
+	.show .language-btn-menu-open {
+		display: flex; 
+		justify-content: space-between;  
+		& .language-btn:after {
+			width: auto; 
+			display: none;
+		}
+	}
+	/*412px*/
+	.hero {
+		height: 330px; 
+		background-position: 50% 0;
+		background-size: cover;
+	}
+
+	.montres-bg {
+		height: 82px; 
+		padding: 12px 21px; 
+		max-width: 380px; 
+		top: -50px; 
+	}
+
+	.montres-logo {
+		max-width: 337px; 
+		margin-bottom: 8px; 
+	}
+
+	.hero-slogan {
+		font-size: 14px; 
+	}
+
+	/*412px*/
+	.brand-logo {
+		width: 210px; 
+		height: 82px; 
+	}
+
+	.section-title {
+	height: 42px; 
+	width: 270px; 
+	margin: 33px auto;
+	font-size: 30px;
+	line-height: 42px;	
+	}
+
+	.news-item {
+   	width: 232px; 
+		height: 187px; 
+   	left: 50%; 
+		transform: translate(-50%, 0); 
+   	padding: 17px 36px 13px 22px;  
+   & .brand-name {
+   	font-size: 31px;
+   	line-height: 39px; 
+   	}
+   & .brand-slogan {
+   	font-size: 29px; 
+   	line-height: 36px; 
+   	}
+   &:after {
+		content: ""; 
+		width: 39px; 
+		height: 1px; 
+		right: -25px; 
+		}
+	}
+
+	.news-slide {
+		background-position: 75% 0;
+	}
+
+	/*412px*/
+
+	.slider-sale {
+		overflow: scroll; 
+		max-width: 412px; 
+	}
+
+	.brands_wrapper {
+	padding-top: 45px; 
+	height: 394px; 
+	}
+
+	/*412px*/
+
+	footer { 
+		& .address {
+		font-size: 14px;
+		line-height: 18px;
+		}
+		& .address-footer {
+			margin-bottom: 20px; 
+		}
+		& .slogan-footer {
+			font-size: 16px; 
+			line-height: 20px; 
+		}
+	}	
+
+	/*412px*/
+
+	/*watches page*/
+	.brands-list-watches {
+	display: flex; 
+	justify-content: center; 
+	max-width: 400px; 
+	margin: 20px auto 30px; 
+	flex-wrap: wrap; 
+	}
+
+
+	/*412px*/
+
+	/*brand collection page*/
+	.brand-cover {
+		height: 252px; 
+		background: no-repeat url("../img/cover_nardin.jpg");
+		background-size: cover; 
+		background-position: 0 100%;
+	}
+
+	.brand-item {
+		display: none; 
+	}
+
+	.brand-section {
+	height: 60px;
+	margin-bottom: 34px; 
+	}
+
+	.brand-section-logo {
+		width: 174px; 
+		height: 52px; 
+		& img {
+			width: 100%; 
+			height: 100%; 
+		}
+	}
+
+
+	.collection-item {
+		max-width: 520px; 
+		margin: 0 auto 34px;   
+		& .collection-title {
+			font-size: 24px;
+			width: 256px;  
+			&:before {
+				width: 30px; 
+				left: -20px; 
+			}
+			&:after {
+				width: 30px; 
+				right: -20px; 
+			} 
+		}
+		& .watch-item {
+		width: 400px; 
+		}
+		& .shade {
+			width: 339px;
+			height: 37px;  
+		} 
+	}
+	.btn-explore {
+		width: 226px; 
+		height: 40px; 
+		margin: 0 auto 134px; 
+		font-size: 20px; 
+		line-height: 40px; 
+	}
+
+	.btn-warranty-wrapper {
+		padding: 0 15px; 
+	}
+	.btn-warranty {
+		line-height: 28px; 
+		padding: 9px 20px; 
+	}
+	/*412px*/
+
+	.sale-img-rotate {
+		width:  411px; 
+	}
+	.watch-rotate {
+		width: 411px;   
+	}
+
+	/*412px*/
+
+	/*sale page*/
+	.sales-wrapper {
+		max-width: 415px; 
+		margin: 0 auto; 
+		justify-content: center; 
+	}
+
+		/*sale item page*/
+	.sale-subtitle {
+		font-size: 20px; 
+		margin-bottom: 25px; 
+	}
+
+	.sale-item-wrapper {
+		flex-direction: column; 
+		align-items: center; 
+	}
+
+	.sale-watches-img {
+		margin-bottom: 20px;  
+	}
+
+	.specification-title {
+	font-size: 28px; 
+	line-height: 35px;
+	}
+
+	.item-title {
+		font-size: 24px; 
+		line-height: 30px; 
+	}
+
+	.item-number {
+		font-size: 22px; 
+		line-height: 28px; 
+	}
+
+	.watches-img {
+	width: 224px;  
+	margin: 0 auto; 
+	}
+
+	/*412px*/
+
+	/*accessories page*/
+
+	.accessory-img{
+	max-width: 386px;
+	margin: 0 auto; 
+	padding-bottom: 34px; 
+	margin-bottom: 29px; 
+	position: relative;  
+	&:after {
+		content: ""; 
+		position: absolute; 
+		height: 34px;
+		width: 320px; 
+		bottom: 0;  
+		left: 50%; 
+		background: no-repeat url("../img/shade.png");
+		transform: translate(-50%, 0); 
+		background-size: contain; 
+		}
+	}
+
+	.accessories-cover {
+		height: 252px; 
+		background: no-repeat url("../img/cover_accessories_medium.jpg");
+		background-position: 0 60%;
+	}
+
+	/*412px*/
+
+	/*boutique page*/
+	.hero-boutique {
+		width: 100%; 
+		height: 252px; 
+		position: relative; 
+		background-size: 250%;
+		background-position: 50% 20%;
+	}
+
+	.btn-tour {
+		display: block; 
+		width: 128px; 
+		height: 46px; 
+		border: 7px solid #fff; 
+		font-size: 16px; 
+		line-height: 32px;  
+		top: 165px;
+		left: 50%;
+		transform: translate(-50%, 0);   
+	}
+
+	.contacts-title {
+		width: 100%; 
+		height: 60px; 
+		font-size: 20px; 
+		line-height: 60px; 
+	}
+
+	.contacts-wrapper {
+		display: block; 
+		max-width: 450px;
+		padding: 34px 35px;
+		font-size: 20px;  
+	}
+
+	.contacts {
+		width: 100%; 
+		margin-bottom: 30px; 
+	}
+
+	.contacts-location {
+		width: 100%; 
+		margin-bottom: 30px; 
+	}
+}
+
+
+/* Mobile 320px*/
+@media only screen 
+and (min-width : 0px) 
+and (max-width : 320px)
+{
+	/* 320px*/
+	.top-header {
+		padding:  0 15px; 
+	}
+
+	.header-burger {
+		display: block;
+		width: 26px;
+	  	left: 15px; 
+	}
+
+	.nav-menu {
+		display: none;  
+	}
+
+
+	.header-burger-line {
+		width: 26px; 
+			&:before { 
+			width: 18px; 
+		}   
+			&:after {
+			width: 26px; 
+		} 
+	}
+
+
+	.language-select {
+		display: none; 
+	}
+
+	.language-btn {
+		width: auto; 
+		font-size: 14px;
+	}
+
+	.header-logo {
+		position: relative; 
+		left: 50%; 
+		margin-left: 0; 
+		transform: translate(-50%, 0); 
+	}
+
+	.header-logo-main {
+		display: none; 
+	}
+
+	.montres-header-center {
+		position: relative; 
+		display: block;
+		width: 210px; 
+		padding-left: 10px; 
+		margin: 0 auto; 
+		cursor: pointer; 
+		& .header-slogan {
+			display: none; 
+		}
+		& img {
+			padding-bottom: 5px; 
+			border-bottom: 1px solid #CAAB68; 
+		} 
+	} 
+	
+	/* 320px*/
+
+	/*!-- header index menu-open--*/
+	.show	.top-header {
+		padding: 0 15px; 
+	}
+
+	.show .menu-open {
+		display: block; 
+		position: absolute;
+		top: 82px; 
+		padding:  0 15px;
+		width: 100%; 
+		z-index: 800; 
+	}
+
+	.show .nav-menu-open {
+		padding-left: 0; 
+	}
+
+	.show .header-logo {
+		display: block; 
+	}
+
+	.show .header-logo-main {
+		display: none; 
+	}
+
+	.show .header-burger {
+		left: 15px; 
+	}
+
+	.show .header-link {
+		padding-left: 0; 
+	}
+
+	.show	.montres-logo-open {
+		display: block; 
+		position: absolute; 
+		text-align: center;  
+		padding-left: 10px; 
+		width: 210px;  
+		left: 50%;
+		top: center; 
+		transform: translate(-50%, 0); 
+		cursor: pointer; 
+		& .header-slogan {
+			display: none; 
+		} 
+		& img {
+			padding-bottom: 5px; 
+			border-bottom: 1px solid #CAAB68; 
+		}
+	}
+
+	.show .montres-header-center {
+		display: none; 
+	}
+	.show .language-btn-menu-open {
+		display: flex; 
+		justify-content: space-between;  
+		& .language-btn:after {
+			width: auto; 
+			display: none;
+		}
+	}
+
+	/* 320px*/
+
+	.hero {
+		height: 330px; 
+		background-position: 52% 0;
+		background-size: cover;
+	}
+
+	.montres-bg {
+		height: 74px; 
+		padding: 8px 12px; 
+		max-width: 298px; 
+		top: -50px; 
+	}
+
+	.montres-logo {
+		max-width: 270px; 
+		margin-bottom: 8px; 
+	}
+
+	.hero-slogan { 
+		font-size: 14px;
+	}
+
+	/* 320px*/
+	
+	.brand-logo {
+		width: 210px; 
+		height: 82px; 
+	}
+
+	.section-title {
+	height: 42px; 
+	width: 270px; 
+	margin: 33px auto;
+	font-size: 30px;
+	line-height: 42px;	
+	}
+
+	.news-item {
+   	width: 232px; 
+		height: 187px; 
+   	left: 50%; 
+		transform: translate(-50%, 0); 
+   	padding: 17px 36px 13px 22px;  
+   & .brand-name {
+   	font-size: 31px;
+   	line-height: 39px; 
+   	}
+   & .brand-slogan {
+   	font-size: 29px; 
+   	line-height: 36px; 
+   	}
+   &:after {
+		content: ""; 
+		width: 39px; 
+		height: 1px; 
+		right: -25px; 
+		}
+	}
+
+	.news-slide {
+		background-position: 72% 0;
+	}
+
+	/* 320px*/
+	
+	.slider-sale {
+		overflow: scroll; 
+		max-width: 412px; 
+	}
+
+	.brands_wrapper {
+	padding-top: 45px; 
+	height: 394px; 
+	}
+
+	/* 320px*/
+	
+	footer { 
+		& .address {
+		font-size: 14px;
+		line-height: 18px;
+		}
+		& .address-footer {
+			margin-bottom: 20px; 
+		}
+		& .slogan-footer {
+			font-size: 16px; 
+			line-height: 20px; 
+		}
+	}	
+
+	/* 320px*/
+	
+	/*watches page*/
+	.brands-list-watches {
+	display: flex; 
+	justify-content: center; 
+	max-width: 400px; 
+	margin: 20px auto 30px; 
+	flex-wrap: wrap; 
+	}
+
+	/* 320px*/
+	
+	/*brand collection page*/
+	.brand-cover {
+		height: 252px; 
+		background: no-repeat url("../img/cover_nardin.jpg");
+		background-size: cover; 
+		background-position: -64px 100%;
+	}
+
+	.brand-item {
+		display: none; 
+	}
+
+	.brand-section {
+	height: 60px;
+	margin-bottom: 34px; 
+	& img {
+		max-width: 174px;  
+		} 
+	}
+
+	/* 320px*/
+	
+	.collection-item {
+		max-width: 520px; 
+		margin: 0 auto 34px;   
+		& .collection-title {
+			font-size: 24px;
+			width: 256px;  
+			&:before {
+				width: 30px; 
+				left: -20px; 
+			}
+			&:after {
+				width: 30px; 
+				right: -20px; 
+			} 
+		}
+		& .watch-item {
+		width: 400px; 
+		}
+		& .shade {
+			width: 339px;
+			height: 37px;  
+		} 
+	}
+
+	.btn-explore {
+		width: 226px; 
+		height: 40px; 
+		margin: 0 auto 134px; 
+		font-size: 20px; 
+		line-height: 40px; 
+	}
+	.btn-warranty-wrapper {
+		padding: 0 15px; 
+	}
+	.btn-warranty {
+		line-height: 28px; 
+		padding: 9px 20px; 
+	}
+
+	.sale-img-rotate {
+		width:  320px; 
+	}
+
+	.watch-rotate {
+		width: 320px;   
+	}
+
+	/* 320px*/
+	
+	/*sale page*/
+	.sales-wrapper {
+		max-width: 415px; 
+		margin: 0 auto; 
+		justify-content: center; 
+	}
+
+	/* 320px*/
+	
+	/*sale item page*/
+	.sale-subtitle {
+		font-size: 20px; 
+		margin-bottom: 25px; 
+	}
+
+	.sale-item-wrapper {
+		flex-direction: column; 
+		align-items: center; 
+	}
+
+	.sale-watches-img {
+		margin-bottom: 20px;  
+	}
+
+	.specification-title {
+	font-size: 28px; 
+	line-height: 35px;
+	}
+
+	.item-title {
+		font-size: 24px; 
+		line-height: 30px; 
+	}
+
+	.item-number {
+		font-size: 22px; 
+		line-height: 28px; 
+	}
+
+	.watches-img {
+	width: 224px;  
+	margin: 0 auto; 
+	}
+
+	/* 320px*/
+	
+	/*accessories page*/
+
+	.accessory-img{
+		max-width: 386px;
+		margin: 0 auto; 
+		padding-bottom: 34px; 
+		margin-bottom: 29px; 
+		position: relative;  
+		&:after {
+			content: ""; 
+			position: absolute; 
+			height: 28px;
+			width: 263px; 
+			bottom: 0;  
+			left: 50%; 
+			background: no-repeat url("../img/shade.png");
+			transform: translate(-50%, 0); 
+			background-size: contain; 
+			}
+	}
+	.accessories-cover {
+		height: 252px; 
+		background: no-repeat url("../img/cover_accessories_medium.jpg");
+		background-position: 0 60%;
+	}
+
+	/* 320px*/
+	
+	/*boutique page*/
+	.hero-boutique {
+		width: 100%; 
+		height: 252px; 
+		position: relative; 
+		background-size: 250%;
+		background-position: 50% 20%;
+	}
+
+	.btn-tour {
+		display: block; 
+		width: 128px; 
+		height: 46px; 
+		border: 7px solid #fff; 
+		font-size: 16px; 
+		line-height: 32px;  
+		top: 165px;
+		left: 50%;
+		transform: translate(-50%, 0);   
+	}
+
+	.contacts-title {
+		width: 100%; 
+		height: 60px; 
+		font-size: 18px; 
+		line-height: 60px; 
+	}
+
+	.contacts-wrapper {
+		display: block; 
+		max-width: 450px;
+		padding: 34px 35px;
+		font-size: 17px;  
+	}
+
+	.contacts {
+		width: 100%; 
+		margin-bottom: 30px; 
+	}
+
+	.contacts-location {
+		width: 100%; 
+		margin-bottom: 30px; 
+	}
+}
+
